@@ -15,10 +15,15 @@ Only bits [14:7] of the 16-bit multiplication result are used to fit the 8-bit o
 
 Instruction Set:
 NOP (000): No operation
+
 ADD (001): Add two registers
+
 MULI (010): Multiply register by immediate
+
 BNE (011): Branch if not equal
+
 BEQ (100): Branch if equal
+
 LWD (101): Load from ROM
 
 
