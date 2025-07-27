@@ -1,7 +1,6 @@
 --------------------------------------------------------
 
 picoMIPS – Gaussian Smoothing Processor
-
 --------------------------------------------------------
 
 
@@ -9,7 +8,6 @@ picoMIPS – Gaussian Smoothing Processor
 --------------------------------------------------------
 
 Summary
-
 --------------------------------------------------------
 
 This project implements an 8-bit processor (picoMIPS) designed to perform 1D Gaussian smoothing on a 256-sample waveform.
@@ -18,7 +16,6 @@ The processor is written in SystemVerilog, tested in ModelSim, and synthesized o
 --------------------------------------------------------
 
 Gaussian Smoothing Kernel used:
-
 --------------------------------------------------------
 
 [17, 29, 35, 29, 17]
@@ -27,7 +24,6 @@ Gaussian Smoothing Kernel used:
 --------------------------------------------------------
 
 Computation:
-
 --------------------------------------------------------
 
 S[i] = W[i−2]*17 + W[i−1]*29 + W[i]*35 + W[i+1]*29 + W[i+2]*17
@@ -37,7 +33,6 @@ Only bits [14:7] of the 16-bit multiplication result are used to fit the 8-bit o
 --------------------------------------------------------
 
 Instruction Set:
-
 --------------------------------------------------------
 
 NOP (000): No operation
@@ -55,7 +50,6 @@ LWD (101): Load from ROM
 --------------------------------------------------------
 
 Execution Flow
-
 --------------------------------------------------------
 
 Wait for SW8 = 1
